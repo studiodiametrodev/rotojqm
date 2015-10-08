@@ -1,401 +1,355 @@
 <!--<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>-->
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Rototec App</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<title>Rototec App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body>
-	<div data-role="page" id="hp1">
+<div data-role="page" id="hp1">
+  <div data-role="header">
+    <h1>splash</h1>
+  </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <div data-role="content">
+      <div class="ui-grid-a">
+        <div class="ui-block-a"> <a class="ui-btn ui-corner-all ui" href="#page1_1">Acque Reflue</a> </div>
+        <div class="ui-block-b"> <a class="ui-btn ui-corner-all ui" href="#page2_1">Prima Pioggia</a> </div>
+        <div class="ui-block-a"> <a class="ui-btn ui-corner-all ui" href="#page3_1">Riutilizzo Acque Piovane</a> </div>
+        <div class="ui-block-b"> <a class="ui-btn ui-corner-all ui" href="#page4_1">Riutilizzo acqua Impianti Autolavaggi</a> </div>
+      </div>
+    </div>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
 
-        <div data-role="header">
-            <h1>splash</h1>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-			<div data-role="content">
-                <div class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a class="ui-btn ui-corner-all ui" href="#page1_1">Acque Reflue</a>
-                    </div>
-                    <div class="ui-block-b">
-                        <a class="ui-btn ui-corner-all ui" href="#page2_1">Prima Pioggia</a>
-                    </div>
-                    <div class="ui-block-a">
-                        <a class="ui-btn ui-corner-all ui" href="#page3_1">Riutilizzo Acque Piovane</a>
-                    </div>
-                    <div class="ui-block-b">
-                        <a class="ui-btn ui-corner-all ui" href="#page4_1">Riutilizzo acqua Impianti Autolavaggi</a>
-                    </div>
-                </div>
-            </div>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-
-
-	
-    <div data-role="page" id="page1_1">
-
-        <div data-role="header">
-            <h1>Page 1</h1>
-			<div data-role="navbar" class="ui-navbar" role="navigation">
-				<ul class="ui-grid-b">
-					<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-					<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-					<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
-				</ul>
+<div data-role="page" id="page1_1">
+		<div data-role="tabs">
+			<div data-role="navbar">
+				<ul>
+			      <li><a href="#ar1" data-theme="a" data-ajax="false">1</a></li>
+			      <li><a href="#ar2" data-theme="a" data-ajax="false">2</a></li>
+			      <li><a href="#ar3" data-theme="a" data-ajax="false">three</a></li>
+			    </ul>
 			</div> 
-        </div><!-- /header -->
+ 
+  <div data-role="header">
+    <h1>Impianti Depurazione Acque Reflue</h1>
+  </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <form id="form_ar" method="post" action="" class="">
     
-        <div role="main" class="ui-content">
-        	<p>Page content goes here.</p>
-            <div data-role="collapsible">
-            	<h1>Collapsible Area</h1>
-            </div>
-            <div data-role="collapsible">
-                <h1>Collapsible Area</h1>
-            </div>
-            <div data-role="collapsible">
-                <h1>Collapsible Area</h1>
-            </div>
-            
-        </div><!-- /content -->
     
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page1_2">
 
-        <div data-role="header">
-            <h1>Page 2</h1>
-			<div data-role="navbar" class="ui-navbar" role="navigation">
-				<ul class="ui-grid-b">
-					<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-					<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-					<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
+
+			<div id="ar1" class="ui-content">
+			<h1>First tab contents</h1>
+			</div>
+			<div id="ar2" class="ui-content">
+				<ul data-role="listview">
+				    <li><a href="#">Acura</a></li>
+				    <li><a href="#">Audi</a></li>
+				    <li><a href="#">BMW</a></li>
+				    <li><a href="#">Cadillac</a></li>
+				    <li><a href="#">Ferrari</a></li>
 				</ul>
 			</div>
-
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page1_3">
-
-        <div data-role="header">
-            <h1>Page 3</h1>
-			<div data-role="navbar" class="ui-navbar" role="navigation">
-				<ul class="ui-grid-b">
-					<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-					<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-					<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
-				</ul>
+			<div id="ar3" class="ui-content">
+			<h1>Terzo tab contents</h1>
 			</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page1_4">
+      
+      
+    </form>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <div data-role="navbar" class="ui-navbar" role="navigation">
+      <ul class="ui-grid-b">
+        <li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left"><!--Indietro--></a></li>
+        <li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-tight"><!--Avanti--></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /footer --> 
+		</div>	<!-- /tabs --> 
 
-        <div data-role="header">
-            <h1>Page 4</h1>
-			<div data-role="navbar" class="ui-navbar" role="navigation">
-				<ul class="ui-grid-b">
-					<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-					<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-				</ul>
-			</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+</div>
+<!-- /page -->
+<div data-role="page" id="page1_2">
+  <div data-role="header">
+    <h1>Page 2</h1>
+    <a data-role="button" class="button-prev-page">Indietro</a> <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="ui-btn-right button-next-page">Avanti</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+<div data-role="page" id="page1_3">
+  <div data-role="header">
+    <h1>Page 3</h1>
+    <a data-role="button" class="button-prev-page">Indietro</a> <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="ui-btn-right button-next-page">Avanti</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+<div data-role="page" id="page1_4">
+  <div data-role="header">
+    <h1>Page 4</h1>
+    <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="button-prev-page">Indietro</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
 
-	
-    <div data-role="page" id="page2_1">
+<div data-role="page" id="page2_1">
+  <div data-role="header">
+    <h1>Page 1</h1>
+    <a data-role="button" class="button-prev-page">Indietro</a> <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="ui-btn-right button-next-page">Avanti</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+<div data-role="page" id="page2_2">
+  <div data-role="header">
+    <h1>Page 2</h1>
+    <a data-role="button" class="button-prev-page">Indietro</a> <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="ui-btn-right button-next-page">Avanti</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+<div data-role="page" id="page2_3">
+  <div data-role="header">
+    <h1>Page 3</h1>
+    <a data-role="button" class="button-prev-page">Indietro</a> <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="ui-btn-right button-next-page">Avanti</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+<div data-role="page" id="page2_4">
+  <div data-role="header">
+    <h1>Page 4</h1>
+    <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="button-prev-page">Indietro</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
 
-        <div data-role="header">
-            <h1>Page 1</h1>
-			<div data-role="navbar" class="ui-navbar" role="navigation">
-				<ul class="ui-grid-b">
-					<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-					<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-					<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
-				</ul>
-			</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page2_2">
+<div data-role="page" id="page3_1">
+  <div data-role="header">
+    <h1>Page 1</h1>
+    <a data-role="button" class="button-prev-page">Indietro</a> <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="ui-btn-right button-next-page">Avanti</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+<div data-role="page" id="page3_2">
+  <div data-role="header">
+    <h1>Page 2</h1>
+    <a data-role="button" class="button-prev-page">Indietro</a> <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="ui-btn-right button-next-page">Avanti</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+<div data-role="page" id="page3_3">
+  <div data-role="header">
+    <h1>Page 3</h1>
+    <a data-role="button" class="button-prev-page">Indietro</a> <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="ui-btn-right button-next-page">Avanti</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+<div data-role="page" id="page3_4">
+  <div data-role="header">
+    <h1>Page 4</h1>
+    <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="button-prev-page">Indietro</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
 
-        <div data-role="header">
-            <h1>Page 2</h1>
-			<div data-role="navbar" class="ui-navbar" role="navigation">
-				<ul class="ui-grid-b">
-					<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-					<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-					<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
-				</ul>
-			</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page2_3">
+<div data-role="page" id="page4_1">
+  <div data-role="header">
+    <h1>Page 1</h1>
+    <a data-role="button" class="button-prev-page">Indietro</a> <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="ui-btn-right button-next-page">Avanti</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+<div data-role="page" id="page4_2">
+  <div data-role="header">
+    <h1>Page 2</h1>
+    <a data-role="button" class="button-prev-page">Indietro</a> <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="ui-btn-right button-next-page">Avanti</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+<div data-role="page" id="page4_3">
+  <div data-role="header">
+    <h1>Page 3</h1>
+    <a data-role="button" class="button-prev-page">Indietro</a> <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="ui-btn-right button-next-page">Avanti</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+<div data-role="page" id="page4_4">
+  <div data-role="header">
+    <h1>Page 4</h1>
+    <a data-role="button" class="ui-btn-center" href="#hp1">Home</a> <a data-role="button" class="button-prev-page">Indietro</a> </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content">
+    <p>Page content goes here.</p>
+  </div>
+  <!-- /content -->
+  
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page --> 
 
-        <div data-role="header">
-            <h1>Page 3</h1>
-		<div data-role="navbar" class="ui-navbar" role="navigation">
-			<ul class="ui-grid-b">
-				<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-				<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-				<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
-			</ul>
-		</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page2_4">
-
-        <div data-role="header">
-            <h1>Page 4</h1>
-			<div data-role="navbar" class="ui-navbar" role="navigation">
-				<ul class="ui-grid-b">
-					<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-					<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-				</ul>
-			</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-
-    
-    
-
-
-
-    <div data-role="page" id="page3_1">
-
-        <div data-role="header">
-            <h1>Page 1</h1>
-		<div data-role="navbar" class="ui-navbar" role="navigation">
-			<ul class="ui-grid-b">
-				<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-				<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-				<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
-			</ul>
-		</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page3_2">
-
-        <div data-role="header">
-            <h1>Page 2</h1>
-		<div data-role="navbar" class="ui-navbar" role="navigation">
-			<ul class="ui-grid-b">
-				<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-				<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-				<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
-			</ul>
-		</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page3_3">
-
-        <div data-role="header">
-            <h1>Page 3</h1>
-		<div data-role="navbar" class="ui-navbar" role="navigation">
-			<ul class="ui-grid-b">
-				<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-				<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-				<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
-			</ul>
-		</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page3_4">
-
-        <div data-role="header">
-            <h1>Page 4</h1>
-		<div data-role="navbar" class="ui-navbar" role="navigation">
-			<ul class="ui-grid-b">
-				<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-				<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-			</ul>
-		</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	
-    <div data-role="page" id="page4_1">
-
-        <div data-role="header">
-            <h1>Page 1</h1>
-		<div data-role="navbar" class="ui-navbar" role="navigation">
-			<ul class="ui-grid-b">
-				<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-				<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-				<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
-			</ul>
-		</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page4_2">
-
-        <div data-role="header">
-            <h1>Page 2</h1>
-		<div data-role="navbar" class="ui-navbar" role="navigation">
-			<ul class="ui-grid-b">
-				<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-				<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-				<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
-			</ul>
-		</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page4_3">
-
-        <div data-role="header">
-            <h1>Page 3</h1>
-		<div data-role="navbar" class="ui-navbar" role="navigation">
-			<ul class="ui-grid-b">
-				<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-				<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-				<li class="ui-block-c"><a data-role="button" class="button-next-page ui-icon-arrow-r ui-btn-icon-right">Avanti</a></li>
-			</ul>
-		</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-	<div data-role="page" id="page4_4">
-
-        <div data-role="header">
-            <h1>Page 4</h1>
-		<div data-role="navbar" class="ui-navbar" role="navigation">
-			<ul class="ui-grid-b">
-				<li class="ui-block-a"><a data-role="button" class="button-prev-page ui-icon-arrow-l ui-btn-icon-left">Indietro</a></li>
-				<li class="ui-block-b"><a data-role="button" class="ui-icon-home ui-btn-icon-left" href="#hp1">Home</a></li>
-			</ul>
-		</div>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
-        </div><!-- /content -->
-    
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
-
-    <script>
+<script>
     $('div[data-role="page"]').each(function(i, e) {
        var prevpage = $(e).prev('div[data-role="page"]'); 
        var nextpage = $(e).next('div[data-role="page"]'); 
@@ -409,3 +363,11 @@
     </script>
 </body>
 </html>
+<div data-role="content">
+  <div class="ui-grid-a">
+    <div class="ui-block-a"><a data-role="button">Acque Reflue</a></div>
+    <div class="ui-block-b"><a data-role="button">Prima Pioggia</a></div>
+    <div class="ui-block-a"><a data-role="button">Riutilizzo Acque Piovane</a></div>
+    <div class="ui-block-b"><a data-role="button">Riutilizzo acqua Impianti Autolavaggi</a></div>
+  </div>
+</div>
